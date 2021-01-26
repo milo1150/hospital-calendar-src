@@ -1,0 +1,53 @@
+/* total summary + error component */
+.summary-table {
+  width: min-content;
+  height: fit-content;
+  box-shadow: $table-shadow;
+}
+
+.error-table {
+  display: flex;
+  width: 20%;
+  margin-left: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0rem 0.6rem rgba($color-grey-dark-2, 0.35);
+  border-radius: 0.3rem;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 1.2rem;
+
+  &__header-text {
+    background: #80cbc4;
+    text-align: center;
+    padding: 0.8rem 0;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    box-shadow: 0 0.3rem 0.5rem rgba($color-grey-dark-2, 0.2);
+  }
+
+  &__body {
+    width: 100%;
+    max-height: 100px;
+  }
+
+  &__message-box {
+    overflow-y: auto;
+    max-height: 100vh;
+    margin: 0 1.5rem;
+
+    &--alert {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__no-warning {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 25vh;
+  }
+
+  &__message-box::-webkit-scrollbar {
+    display: none;
+  }
+}

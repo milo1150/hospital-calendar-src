@@ -1,0 +1,72 @@
+.form-login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  text-align: center;
+
+  &__input {
+    &-layout {
+      margin-bottom: 1rem;
+    }
+    &-element {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    height: 4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    &-box {
+      margin-top: 2rem;
+    }
+    &--normal {
+      color: #6d6969;
+      background-color: #4fb4e021;
+      border-color: #f3f0f080;
+      &:hover,
+      &:focus {
+        color: #0c6b9480;
+        border-color: initial;
+      }
+    }
+    &--demo {
+      color: #fff;
+      background-color: #f78f01bd;
+      border-color: #f78f01bd;
+      &:hover,
+      &:focus {
+        color: #f78f01bd;
+        border-color: initial;
+      }
+    }
+  }
+
+  &__divider {
+    margin: 1rem auto !important;
+    span {
+      color: #b7b7b7;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.span-error {
+  color: red;
+  margin-bottom: 1rem !important;
+}
+
+/* MUI */
+.MuiFormLabel-root {
+  font-size: 1.5rem !important;
+  background-color: #fff;
+  padding-right: 0.7rem !important;
+}
+
+.MuiInputBase-input {
+  font-size: 1.5rem !important;
+}

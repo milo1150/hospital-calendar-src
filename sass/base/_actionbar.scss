@@ -1,0 +1,120 @@
+.actionbar {
+  display: flex;
+  width: auto;
+  padding-bottom: 2rem;
+  align-items: center;
+  justify-content: space-between;
+
+  /* ------------ ELEMENT DIVIDER ------------ */
+  &__project-setup {
+    display: flex;
+    align-items: center;
+  }
+
+  /* ------------ LOAD WORKSHEET ------------ */
+
+  &__exist-sheet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+
+    &-block {
+      display: flex;
+    }
+  }
+
+  /* ------------ ACTION BUTTON ------------ */
+  &__button-group {
+    display: flex;
+    width: auto;
+    height: auto;
+
+    & > *:not(:last-child) {
+      padding-right: 0.7rem;
+    }
+  }
+
+  /* MATERIRAL UI */
+  //  Circle Button
+  &__fab {
+    background-color: $color-grey-light-1 !important;
+    padding: 0.5rem !important;
+    box-shadow: 0 0.2rem 0.4rem rgba($color-grey-dark-2, 0.5) !important;
+    &:disabled {
+      background-color: #b5b3b3 !important;
+    }
+    &:hover {
+      background-color: $color-primary !important;
+    }
+    &--lock {
+      &:hover {
+        // background-color: #ffabab !important;
+      }
+    }
+    &--random {
+      &:hover {
+        // background-color: $color-primary !important;
+      }
+    }
+    &--clear {
+      &:hover {
+        // background-color: $color-primary !important;
+      }
+    }
+    &--export-excel {
+      &:hover {
+        // background-color: #23b936ba !important;
+      }
+    }
+  }
+
+  &__fab-box {
+    text-align: center;
+  }
+
+  &__fab-text {
+    font-size: 1.2rem;
+    color: #888888;
+    margin-top: 0.2rem;
+  }
+  // ICON IN CIRCLE FAB
+  &__fabicon {
+    color: #000 !important;
+    font-size: 2.5rem !important;
+  }
+
+  &__divider {
+    border-color: $color-grey-light-2;
+    font-size: 4rem;
+    margin-top: 0.7rem;
+  }
+
+  &__back-btn {
+    cursor: pointer;
+    display: flex;
+  }
+}
+
+.file-name {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* POPOVER - SAVE */
+.save-popover {
+  display: flex;
+  align-items: center;
+  &__p-topic {
+    width: 110px;
+    &--loadws {
+      margin-right: 1rem;
+    }
+  }
+
+  &__action {
+    display: flex;
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,100 @@
+p {
+  margin-bottom: 0 !important;
+  font-family: $font-primary;
+}
+
+.p {
+  &--table-header {
+    font-weight: 600;
+  }
+
+  &--table-namenum {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    @media screen and (max-width: 1600px) {
+      font-size: 1.2rem;
+    }
+    @media screen and (max-width: 1400px) {
+      font-weight: 500;
+    }
+  }
+
+  &--table-rdcell {
+    font-weight: 500;
+    font-size: 1.4rem;
+    @media screen and (max-width: 1600px) {
+      font-size: 1.2rem;
+    }
+    @media screen and (max-width: 1400px) {
+      font-size: 1.03rem;
+    }
+  }
+
+  &--holiday {
+    color: red;
+  }
+
+  &--warning {
+    color: red;
+  }
+
+  /* SIDE DRAWER P */
+  &--group {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &--add-new-group {
+    text-align: center;
+  }
+
+  &--input-topic {
+    padding-bottom: 0.5rem;
+  }
+
+  &--group-name-error {
+    color: red;
+  }
+
+  &--memberlist {
+    padding-bottom: 0.7rem;
+    margin-left: 3rem;
+    font-weight: 500;
+  }
+}
+
+.schedule-list {
+  &__text {
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    padding: 0.3rem;
+
+    &--normal {
+      color: inherit;
+    }
+
+    &--ot {
+      color: red;
+    }
+  }
+}
+
+.action-text {
+  padding-bottom: 0.3rem;
+  color: $color-action-text;
+}
+
+.action-filename {
+  position: absolute;
+  transform: translateX(0.5rem);
+}
+
+span.span-error {
+  color: red;
+}
+

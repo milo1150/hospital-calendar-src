@@ -1,0 +1,29 @@
+// COLOR
+$color-primary: #e4feff;
+$color-primary-dark: #00f7ff8e;
+
+$color-grey-light-1: #faf9f9;
+$color-grey-light-2: #ccc;
+// $color-grey-light-3: #f4f4f4;
+
+$color-grey-dark-1: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$table-border-color: #d2d2d2;
+
+$color-red-icon: rgb(255, 0, 0);
+$color-blue-icon: rgb(38, 97, 226);
+$color-green-icon: rgb(11, 179, 61);
+$color-default-button-border: #d9d9d9;
+
+$color-action-text: #a5a5a5;
+
+// FONT FAMILY
+// $font-primary: 'Kanit', sans-serif;
+$font-primary: 'Niramit', sans-serif;
+
+$table-border: 0.5px solid; // TABLE BORDER SIZE
+$table-shadow: 0 0.2rem 0.5rem rgba($color-grey-dark-2, 0.25); // TABLE SHADOW
+$action-button-shadow: 0 0.2rem 0.4rem rgba($color-grey-dark-2, 0.5) !important;
+$action-button-shadow-2: 0.3rem 0.3rem 0.3rem rgba($color-grey-dark-2, 0.4) !important;

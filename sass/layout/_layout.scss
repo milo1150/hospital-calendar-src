@@ -1,0 +1,41 @@
+.main {
+  display: grid;
+  grid-template-rows: 5vh 1fr;
+  font-family: $font-primary;
+  background-color: $color-grey-light-1;
+  height: 100vh;
+  // font-weight: 300;
+}
+
+.top-nav {
+  background-color: #e4feff;
+  grid-row: 1 / 2;
+  box-shadow: 0 0.2rem 0.1rem rgba($color-grey-dark-2, 0.2);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 2rem;
+}
+
+.content {
+  grid-row: 2 / -1;
+  padding: 2rem;
+  background-color: $color-grey-light-1;
+}
+
+.table-calculate {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+body {
+  overflow: auto;
+}
+
+.ant-scrolling-effect {
+  position: initial !important;
+  width: auto !important;
+  overflow: auto !important;
+}

@@ -1,0 +1,119 @@
+.worksheet {
+  &-layout {
+    display: flex;
+    height: 100% !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-box {
+    display: flex;
+    &__new-ws {
+      display: flex;
+    }
+    &__load {
+    }
+  }
+}
+
+.ws-setup {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin-left: 3rem;
+  align-items: center;
+  justify-content: center;
+
+  &__year-month {
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    &-block {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+
+      & > *:not(:last-child) {
+        margin-right: 0.4rem;
+      }
+    }
+
+    & > *:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+    &--month {
+      width: 120px;
+    }
+    &--year {
+      width: 85px;
+    }
+  }
+
+  &__team {
+    &-box {
+      grid-row: 2 / 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-select {
+      width: 100%;
+    }
+  }
+
+  &__done {
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* MANAGE GROUP ICON */
+.icon-group {
+  font-size: 2.5rem !important;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+/* DIVIDER */
+.divider-prepsheet {
+  height: auto !important;
+  margin: 0 6rem !important;
+  border-color: #dcdcdc !important;
+}
+.divider-text {
+  position: absolute;
+  transform: translateX(-22px);
+  top: 46%;
+  background-color: #faf9f9;
+  font-size: 1.3rem;
+  color:#b7b7b7;
+}
+
+/* ?????? */
+.p-setupws {
+  position: relative !important;
+  top: 44% !important;
+  left: -50% !important;
+  background-color: #faf9f9 !important;
+  color: #000;
+}
+
+/* MANAGE GROUP ICON */
+.group {
+  &-fab {
+    box-shadow: none !important;
+    background-color: #faf9f9 !important;
+    margin-left: 0.4rem !important;
+  }
+  &-icon {
+    font-size: 2rem !important;
+  }
+}
+
+/* MODAL */
+.ant-modal-footer {
+  border-top: none !important;
+}

@@ -1,0 +1,51 @@
+// Write over Ant design table
+// .ant-table {
+//   color: rgba(0, 0, 0, 0.85);
+//   font-variant: tabular-nums;
+//   line-height: 1.0;
+//   list-style: none;
+//   font-feature-settings: 'tnum', 'tnum';
+// }
+
+table {
+  border-bottom: $table-border;
+  border-right: $table-border;
+  border-color: $table-border-color;
+}
+
+th,
+td {
+  border: $table-border;
+  border-color: $table-border-color;
+}
+
+.table-main {
+  width: 100%;
+  box-shadow: $table-shadow;
+}
+
+.hos-table-cell {
+  &--number {
+    width: 4.2rem;
+    @media screen and (max-width: 1600px) {
+      width: 2.2rem;
+    }
+  }
+  &--name {
+    width: 10%;
+  }
+  &--nm-cell {
+    width: 5rem;
+    @media screen and (max-width: 1600px) {
+      width: 3.6rem;
+    }
+    @media screen and (max-width: 1400px) {
+      width: 3.5rem;
+    }
+  }
+  &--sm-cell {
+    max-width: auto;
+    @media screen and (max-width: 1600px) {
+    }
+  }
+}
